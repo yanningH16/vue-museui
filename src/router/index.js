@@ -17,6 +17,7 @@ const First = () => import(/* webpackChunkName: "小的" */ '@/components/first'
 //   })
 // }
 const Cube = () => import(/* webpackChunkName: "滴滴" */ '@/components/cube')
+const A = () => import(/* webpackChunkName: "滴滴" */ '@/components/a')
 Vue.use(Router)
 export default new Router({
   routes: [
@@ -37,6 +38,12 @@ export default new Router({
       name: 'cube',
       component: Cube,
       meta: { title: '首页' }
+    },
+    {
+      path: '/a',
+      name: 'a',
+      component: A,
+      meta: { title: 'a页' }
     }
   ],
   mode: 'history'

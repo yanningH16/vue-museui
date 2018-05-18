@@ -2,8 +2,8 @@
   <div>
     <mu-linear-progress />
     <div class="wrap">
-     <router-link :to="{path:'a'}"> <mu-raised-button @click="home" label="Primary" class="demo-raised-button" primary/></router-link>
-      <p>测试rem字体</p>
+     <router-link :to="{name:'a'}"> <mu-raised-button @click="home" label="Primary" class="demo-raised-button" primary/></router-link>
+     <router-link :to="{name:'first'}"><p>测试rem字体</p></router-link>
       <div>
         <mu-auto-complete hintText="请随便输入点啥" @input="handleInput" :dataSource="dataSource" @change="handlechange" />
         <mu-auto-complete hintText="请随便输入点啥" labelFloat label="full width" fullWidth @input="handleInput" :dataSource="dataSource" />
